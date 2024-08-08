@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="bg-gradient-to-r from-lime-300 to-teal-400 h-screen overflow-hidden">
+    <div class="flex flex-col items-start justify-center h-screen ml-20 mb-36 w-full ">
+        <h1 class="text-4xl font-bold ">Get a <br><span class="text-cyan-950">Random Password</span></h1>
+        <hr class="w-80 border-2 border-black mt-3" />
+        <div class="flex justify-between items-center gap-12 mt-8 bg-white w-96 h-14 border border-gray-500 shadow-md rounded-md">
+            <input id="Password" type="text" placeholder=" Generate Password" class="   border-none flex-1 rounded-md p-2 outline-none ">
+            <img src="./images/copy.png" alt="" class=" w-6 h-6 mr-13 -translate-x-1 pr-1 " onclick="copyPassword()">
+        </div>
+       <div class="flex items-center gap-2 mt-8 bg-gradient-to-r from-amber-800 to-green-950 p-3 pl-4 py-3 rounded-md">
+        <img src="./images/generate.png" alt="" class="w-4">
+        <button class="text-center text-white " onclick="generate()">
+            Generate Password
+        </button>
+        
+       </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html> h
